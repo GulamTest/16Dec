@@ -30,7 +30,7 @@ jobs:
  
           name: "Setup custom environment variables // its your workflow step"
  
-          command: |
+          command: |testcafe "lambdatest:Internet Explorer@11.0:Windows 10" "test.js"
  
             echo 'export LT_USERNAME="{your_lambdatest_username}"' >> $BASH_ENV
  
